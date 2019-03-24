@@ -8,7 +8,7 @@ project.
 # Skeleton installation (delete this section when done)
 
 ```sh
-composer create-project itk-dev/symfony-4-skeleton:dev-master my-project
+composer create-project itk-dev/symfony-4-skeleton my-itk-dev-project
 ```
 
 ## Post skeleton installation
