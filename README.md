@@ -5,9 +5,18 @@ project.
 
 --- ✂ --------------------------------------------------------------------------
 
-# Post skeleton installation (delete this section when done)
+# Skeleton installation (delete this section when done)
 
-- [ ] Edit `$header` in `.php_cs.dist`.
+```sh
+composer create-project itk-dev/symfony-4-skeleton my-project
+```
+
+## Post skeleton installation
+
+- [ ] Edit (or remove) `"name"` in [`composer.json`](composer.json).
+- [ ] Edit `$header` in [`.php_cs.dist`](.php_cs.dist).
+- [ ] Edit [`README.md`](README.md) (remove this section and describe your
+      actual project).
 
 --- ✂ --------------------------------------------------------------------------
 
