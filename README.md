@@ -13,6 +13,7 @@ composer create-project itk-dev/symfony-4-skeleton my-project
 
 ## Post skeleton installation
 
+- [ ] Edit `COMPOSE_PROJECT_NAME` in [`.env`](.env).
 - [ ] Edit (or remove) `"name"` in [`composer.json`](composer.json).
 - [ ] Edit `$header` in [`.php_cs.dist`](.php_cs.dist).
 - [ ] Edit [`README.md`](README.md) (remove this section and describe your
@@ -46,6 +47,19 @@ composer require api
 ```
 
 --- ✂ --------------------------------------------------------------------------
+
+## Starting the show
+
+```sh
+docker-compose pull
+docker-compose up -d
+```
+
+Open the site in your default browser:
+
+```sh
+open http://$(docker-compose port nginx 80)
+```
 
 ## Coding standards
 
