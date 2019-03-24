@@ -18,8 +18,6 @@ composer create-project itk-dev/symfony-4-skeleton my-project
 - [ ] Edit [`README.md`](README.md) (remove this section and describe your
       actual project).
 
---- ✂ --------------------------------------------------------------------------
-
 ## Suggested packages
 
 [Doctrine](https://symfony.com/doc/current/doctrine.html):
@@ -46,6 +44,8 @@ composer require alterphp/easyadmin-extension-bundle
 ```sh
 composer require api
 ```
+
+--- ✂ --------------------------------------------------------------------------
 
 ## Coding standards
 
