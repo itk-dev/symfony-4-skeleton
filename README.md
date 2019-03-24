@@ -8,13 +8,12 @@ project.
 # Skeleton installation (delete this section when done)
 
 ```sh
-composer create-project itk-dev/symfony-4-skeleton my-project
+composer create-project itk-dev/symfony-4-skeleton:dev-master my-project
 ```
 
 ## Post skeleton installation
 
 - [ ] Edit `COMPOSE_PROJECT_NAME` in [`.env`](.env).
-- [ ] Edit (or remove) `"name"` in [`composer.json`](composer.json).
 - [ ] Edit `$header` in [`.php_cs.dist`](.php_cs.dist).
 - [ ] Edit [`README.md`](README.md) (remove this section and describe your
       actual project).
