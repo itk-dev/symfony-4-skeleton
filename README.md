@@ -13,7 +13,7 @@ composer create-project itk-dev/symfony-4-skeleton:dev-master my-project
 
 ## Post skeleton installation
 
-- [ ] Edit `COMPOSE_PROJECT_NAME` in [`.env`](.env).
+- [ ] Edit [`.env`](.env) and define the `COMPOSE_PROJECT_NAME` variable.
 - [ ] Edit `$header` in [`.php_cs.dist`](.php_cs.dist).
 - [ ] Edit [`README.md`](README.md) (remove this section and describe your
       actual project).
