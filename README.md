@@ -27,6 +27,11 @@ composer require symfony/orm-pack
 composer require --dev symfony/maker-bundle
 ```
 
+Set `DATABASE_URL` in `.env.dev`:
+```sh
+DATABASE_URL=mysql://db:db@mariadb:3306/db
+```
+
 [EasyAdminBundle](https://symfony.com/doc/master/bundles/EasyAdminBundle/index.html):
 
 ```sh
@@ -44,6 +49,16 @@ composer require alterphp/easyadmin-extension-bundle
 ```sh
 composer require api
 ```
+
+[Encore](https://symfony.com/doc/current/frontend/encore/installation.html)
+```sh
+composer require encore
+yarn install
+```
+
+See also:
+* [Encore with bootstrap](https://symfony.com/doc/current/frontend/encore/bootstrap.html#importing-bootstrap-styles)
+* [Boostrap 4 Form Theme](https://symfony.com/doc/current/form/bootstrap4.html)
 
 --- ✂ --------------------------------------------------------------------------
 
