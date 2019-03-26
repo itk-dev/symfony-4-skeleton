@@ -27,7 +27,7 @@ composer require symfony/orm-pack
 composer require --dev symfony/maker-bundle
 ```
 
-Set DATABASE_URL in .env.dev:
+Set `DATABASE_URL` in `.env.dev`:
 ```sh
 DATABASE_URL=mysql://db:db@mariadb:3306/db
 ```
