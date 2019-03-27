@@ -15,8 +15,7 @@ composer create-project itk-dev/symfony-4-skeleton my-itk-dev-project
 
 - [ ] Edit [`.env`](.env) and define the `COMPOSE_PROJECT_NAME` variable.
 - [ ] Edit `$header` in [`.php_cs.dist`](.php_cs.dist).
-- [ ] Edit [`README.md`](README.md) (remove this section and describe your
-      actual project).
+- [ ] Edit [`README.md`](README.md) (Remove optional sections and describe your actual project).
 
 ## Suggested packages
 
@@ -53,7 +52,23 @@ composer require api
 [Encore](https://symfony.com/doc/current/frontend/encore/installation.html)
 ```sh
 composer require encore
-yarn install
+yarn add --dev eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
+yarn add --dev stylelint stylelint-config-recommended-scss stylelint-scss
+```
+
+Add these lines to `scripts` in `package.json`:
+
+```json
+        "check-coding-standards/stylelint": "stylelint --config=.stylelintrc.js 'assets/**/*.scss'",
+        "check-coding-standards/scss": "yarn run check-coding-standards/stylelint",
+        "check-coding-standards/eslint": "eslint --config .eslintrc.js 'assets/**/*.js'",
+        "check-coding-standards/js": "yarn run check-coding-standards/eslint",
+        "check-coding-standards": "yarn run check-coding-standards/scss; yarn run check-coding-standards/js",
+        "apply-coding-standards/stylelint": "stylelint --config=.stylelintrc.js 'assets/**/*.scss' --fix",
+        "apply-coding-standards/scss": "yarn run apply-coding-standards/stylelint",
+        "apply-coding-standards/eslint": "eslint --config .eslintrc.js 'assets/**/*.js' --fix",
+        "apply-coding-standards/js": "yarn run apply-coding-standards/eslint",
+        "apply-coding-standards": "yarn run apply-coding-standards/scss; yarn run apply-coding-standards/js"
 ```
 
 See also:
@@ -98,3 +113,45 @@ Check Twig templates using [Twigcs](https://github.com/allocine/twigcs):
 ```sh
 composer check-coding-standards/twigcs
 ```
+
+--- ✂ --- (remove this section if not using encore) ----------------------------
+
+### Assets (SCSS and JavaScript)
+
+Check coding standards in all assets:
+
+```sh
+yarn check-coding-standards
+```
+
+Check coding standards in SCSS files:
+
+```sh
+yarn check-coding-standards/scss
+```
+
+Check coding standards in JavaScript files:
+
+```sh
+yarn check-coding-standards/js
+```
+
+Apply coding standards to all assets:
+
+```sh
+yarn apply-coding-standards
+```
+
+Apply coding standards to SCSS files:
+
+```sh
+yarn apply-coding-standards/scss
+```
+
+Apply coding standards to JavaScript files:
+
+```sh
+yarn apply-coding-standards/js
+```
+
+--- ✂ --------------------------------------------------------------------------
