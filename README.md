@@ -15,7 +15,8 @@ composer create-project itk-dev/symfony-4-skeleton my-itk-dev-project
 
 - [ ] Edit [`.env`](.env) and define the `COMPOSE_PROJECT_NAME` variable.
 - [ ] Edit `$header` in [`.php_cs.dist`](.php_cs.dist).
-- [ ] Edit [`README.md`](README.md) (Remove optional sections and describe your actual project).
+- [ ] Edit [`README.md`](README.md) (Remove optional sections and describe your
+      actual project).
 
 ## Suggested packages
 
@@ -27,6 +28,7 @@ composer require --dev symfony/maker-bundle
 ```
 
 Set `DATABASE_URL` in `.env.dev`:
+
 ```sh
 DATABASE_URL=mysql://db:db@mariadb:3306/db
 ```
@@ -50,8 +52,14 @@ composer require api
 ```
 
 [Encore](https://symfony.com/doc/current/frontend/encore/installation.html)
+
 ```sh
 composer require encore
+```
+
+Add tools for linting assets:
+
+```sh
 yarn add --dev eslint eslint-config-standard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-standard
 yarn add --dev stylelint stylelint-config-recommended-scss stylelint-scss
 ```
@@ -72,8 +80,9 @@ Add these lines to `scripts` in `package.json`:
 ```
 
 See also:
-* [Encore with bootstrap](https://symfony.com/doc/current/frontend/encore/bootstrap.html#importing-bootstrap-styles)
-* [Boostrap 4 Form Theme](https://symfony.com/doc/current/form/bootstrap4.html)
+
+- [Encore with bootstrap](https://symfony.com/doc/current/frontend/encore/bootstrap.html#importing-bootstrap-styles)
+- [Boostrap 4 Form Theme](https://symfony.com/doc/current/form/bootstrap4.html)
 
 --- ✂ --------------------------------------------------------------------------
 
